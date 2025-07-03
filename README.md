@@ -12,6 +12,24 @@ The Gutendex API cross platform demo mobile app showcasing infinite scroll-load 
 - Built with `Provider` for state management
 - Clean MVVM-ish architecture
 
+## Screenshots
+
+### Home Screen
+
+<img src="screenshots/gutendex_app_s1.png" style="width: 300px; max-width: 300px;" />
+
+### Genre Wise Books Grid Screen
+
+<img src="screenshots/gutendex_app_s2.png" style="width: 300px; max-width: 300px;" />
+
+### Genre Wise Books Search Grid Screen
+
+<img src="screenshots/gutendex_app_s3.png" style="width: 300px; max-width: 300px;" />
+
+### Readable Book Screen
+
+<img src="screenshots/gutendex_app_s4.png" style="width: 300px; max-width: 300px;" />
+
 ## Requirements
 
 - [Flutter SDK](https://docs.flutter.dev/get-started/install) (v3.10 or higher)
