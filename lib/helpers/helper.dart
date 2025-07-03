@@ -9,7 +9,7 @@ import 'package:url_launcher/url_launcher_string.dart';
 
 abstract class Helper {
   static Future<void> openLink(String url) async {
-    if (!await launchUrlString(url, mode: LaunchMode.platformDefault)) {
+    if (!await launchUrlString(url, mode: LaunchMode.externalApplication)) {
       throw Exception('Could not launch $url');
     }
   }
