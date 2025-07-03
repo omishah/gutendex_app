@@ -10,7 +10,7 @@ abstract class AppTheme {
       brightness: Brightness.light,
       surface: Constants.bgColor,
     ),
-    textTheme: TextTheme(
+    textTheme: const TextTheme(
       bodyMedium: TextStyle(
         fontSize: Constants.bodyFontSize,
         color: Constants.bodyTextColor,
@@ -31,7 +31,7 @@ abstract class AppTheme {
         fontWeight: FontWeight.w600,
       ),
     ),
-    appBarTheme: AppBarTheme(
+    appBarTheme: const AppBarTheme(
       titleSpacing: 0,
       scrolledUnderElevation: 0,
       backgroundColor: Constants.appBarBgColor,
