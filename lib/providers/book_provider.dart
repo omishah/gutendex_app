@@ -7,18 +7,21 @@ import 'package:gutendex_app/helpers/helper.dart';
 import 'package:gutendex_app/models/book.dart';
 
 class BookProvider with ChangeNotifier {
+  // variables
   final List<Book> _books = [];
   LoadingState _loadingState = LoadingState.done;
   FetchType _fetchType = FetchType.initial;
   int _currentPage = 1;
   String? _nextPageUrl;
 
+  // getters
   List<Book> get books => _books;
   LoadingState get loadingState => _loadingState;
   FetchType get fetchType => _fetchType;
   int get currentPage => _currentPage;
   String? get nextPageUrl => _nextPageUrl;
 
+  // fetch books with paramters
   Future<void> fetchBooks({
     required String topic,
     required FetchType fetchType,
