@@ -43,7 +43,7 @@ class BookCard extends StatelessWidget {
           Text(
             book.title,
             maxLines: 2,
-            style: TextStyle(
+            style: const TextStyle(
               overflow: TextOverflow.ellipsis,
               fontSize: Constants.bookFontSize,
               fontWeight: FontWeight.bold,
@@ -54,7 +54,7 @@ class BookCard extends StatelessWidget {
             child: Text(
               book.authorName,
               maxLines: 2,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: Constants.bookFontSize,
                 overflow: TextOverflow.ellipsis,
               ),
