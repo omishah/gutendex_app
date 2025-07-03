@@ -14,6 +14,7 @@ class SearchBox extends StatefulWidget {
 class _SearchBarWidgetState extends State<SearchBox> {
   final _controller = TextEditingController();
 
+  // clear inputs
   void _clearInput() {
     _controller.clear();
     widget.onSubmit?.call('');
@@ -23,11 +24,13 @@ class _SearchBarWidgetState extends State<SearchBox> {
   @override
   void initState() {
     super.initState();
+    // listener for any input change
     _controller.addListener(() => setState(() {}));
   }
 
   @override
   void dispose() {
+    // dispose controller
     _controller.dispose();
     super.dispose();
   }
@@ -42,7 +45,7 @@ class _SearchBarWidgetState extends State<SearchBox> {
       cursorColor: Constants.primaryColor,
       decoration: InputDecoration(
         hintText: 'Search',
-        hintStyle: TextStyle(
+        hintStyle: const TextStyle(
           color: Constants.secondaryTextColor,
           fontWeight: FontWeight.w600,
         ),
@@ -65,11 +68,11 @@ class _SearchBarWidgetState extends State<SearchBox> {
           borderRadius: BorderRadius.circular(Constants.radius4),
           borderSide: BorderSide.none,
         ),
-        focusedBorder: OutlineInputBorder(
+        focusedBorder: const OutlineInputBorder(
           borderSide: BorderSide(color: Constants.primaryColor, width: 2),
         ),
       ),
-      style: TextStyle(fontWeight: FontWeight.w600),
+      style: const TextStyle(fontWeight: FontWeight.w600),
     );
   }
 }
