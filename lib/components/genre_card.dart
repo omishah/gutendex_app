@@ -22,7 +22,7 @@ class GenreCard extends StatelessWidget {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(Constants.radius4),
           ),
-          contentPadding: EdgeInsets.symmetric(
+          contentPadding: const EdgeInsets.symmetric(
             horizontal: Constants.commonPadding,
           ),
           minTileHeight: 50,
