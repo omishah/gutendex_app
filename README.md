@@ -1,6 +1,6 @@
-# Gutendex Cross Platform Mobile App
+# Gutendex Cross Platform Mobile App (Flutter)
 
-The Gutendex API cross platform demo mobile app showcasing infinite scroll-load books with search feature.
+The Gutendex API cross platform mobile app using Flutter showcasing infinite scroll-load books with search feature.
 
 ## Features
 
